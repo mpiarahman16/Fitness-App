@@ -15,7 +15,7 @@ app.use(express.json());
 require("./routes/apiRoutes.js")(app);
 require("./routes/htmlRoutes")(app);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_dc2xr282:ahe5ergjlkqpgqpuiffeukb4no@ds151662.mlab.com:51662/heroku_dc2xr282", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
